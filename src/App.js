@@ -18,7 +18,7 @@ const App = () => {
         if ({ query } == null) {
           setItems(result.data)
         } else if ({ query }) {
-          setItems(result.data.filter(item => item.image != '' ? item.name.toLowerCase().includes(query) : null))
+          setItems(result.data.filter(item => item.name.toLowerCase().includes(query)))
           }
         // console.log(result.data)
         // setItems(result.data)
